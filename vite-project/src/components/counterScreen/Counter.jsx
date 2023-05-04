@@ -8,7 +8,7 @@ export const Counter = () => {
     console.log(count);
   return (
     <div>
-        <div  className='count-div '>
+        <div  className={`${count < 0 ?"red": count >0?"green": "count-div"}`}>
       <h1>{count}</h1>
       </div>
     </div>
